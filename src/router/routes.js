@@ -21,6 +21,17 @@ import Diagnosis from '../views/specialtyTherapy/diagnosis/index.vue'
 import DiseaseWiki from '../views/specialtyTherapy/diseaseWiki/index.vue'
 import SpecialNavigation from '../views/specialtyTherapy/specialNavigation/index.vue'
 import SpecialTherapy from '../views/specialtyTherapy/specialTherapy/index.vue'
+import BodyHealth from '../views/wellnessRegimen/bodyHealth/index.vue'
+import Emotionalregulation from '../views/wellnessRegimen/emotionalregulation/index.vue'
+import HealthColumn from '../views/wellnessRegimen/healthColumn/index.vue'
+import MedicalFood from '../views/wellnessRegimen/medicalFood/index.vue'
+import PhysicalGuidance from '../views/wellnessRegimen/physicalGuidance/index.vue'
+import PopulationHealth from '../views/wellnessRegimen/populationHealth/index.vue'
+import SeasonalHealth from '../views/wellnessRegimen/seasonalHealth/index.vue'
+import DoctorMap from '../views/convenienceServices/doctorMap/index.vue'
+import IntelligentDiagnosis from '../views/convenienceServices/intelligentDiagnosis/index.vue'
+import MedicinePrice from '../views/convenienceServices/medicinePrice/index.vue'
+
 
 
 
@@ -51,4 +62,14 @@ export default [
     { name: 'DiseaseWiki', path: '/diseaseWiki', component: DiseaseWiki },
     { name: 'SpecialNavigation', path: '/specialNavigation', component: SpecialNavigation },
     { name: 'SpecialTherapy', path: '/specialTherapy', component: SpecialTherapy },
+    { name: 'BodyHealth', path: '/bodyHealth', component: BodyHealth },
+    { name: 'Emotionalregulation', path: '/emotionalregulation', component: Emotionalregulation },
+    { name: 'HealthColumn', path: '/healthColumn', component: HealthColumn },
+    { name: 'MedicalFood', path: '/medicalFood', component: MedicalFood },
+    { name: 'PhysicalGuidance', path: '/physicalGuidance', component: PhysicalGuidance },
+    { name: 'PopulationHealth', path: '/populationHealth', component: PopulationHealth },
+    { name: 'SeasonalHealth', path: '/seasonalHealth', component: SeasonalHealth },
+    { name: 'DoctorMap', path: '/doctorMap', component: DoctorMap },
+    { name: 'IntelligentDiagnosis', path: '/intelligentDiagnosis', component: IntelligentDiagnosis },
+    { name: 'MedicinePrice', path: '/medicinePrice', component: MedicinePrice },
 ]
