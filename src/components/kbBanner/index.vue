@@ -1,0 +1,72 @@
+<template>
+    <BreadLink :firstTitle="firstTitle" :secondTitle="secondTitle" color="#ffffff" />
+    <div class="banner">
+        <div class="textcontainner">
+            <div class="text1">{{ text1 }}</div>
+            <div class="text2">{{ text2 }}</div>
+            <div class="text3">{{ text3 }}</div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+import BreadLink from '@/components/breadLink/index.vue'
+defineProps({
+    text1: String,
+    text2: String,
+    text3: String,
+    firstTitle: String,
+    secondTitle: String,
+});
+</script>
+<style lang="less" scoped>
+.banner {
+    width: 100%;
+    height: 844px;
+    background-image: url('/image/kbBanner.png');
+    background-size: 100% 100%;
+    background-color: rgba(245, 245, 220, 1);
+    .textcontainner {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 200px;
+    }
+}
+
+@font-face {
+    font-family: 'HYCuSong-J';
+    src: url('/font/HYCuSong.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner .text1 {
+    font-family: DIN, DIN;
+    font-weight: 400;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.banner .text2 {
+    font-size: 70px;
+    font-family: 'HYCuSong-J';
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-top: 12px;
+}
+
+.banner .text3 {
+    width: 734px;
+    font-size: 24px;
+    font-family: 'HYCuSong-J';
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-top: 18px;
+}
+</style>

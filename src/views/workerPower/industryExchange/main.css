@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFCF6;
+}
+
+.message {
+    position: relative;
+    width: 100%;
+    height: 1620px;
+    background-size: 100% 100%;
+}
+
+.exchangeContainer {
+    width: 1200px;
+    height: 1083px;
+    /* background-color: #ffffff; */
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    padding-top: 43px;
+}
+
+.exchangeContainer .left {
+    width: 800px;
+}
+
+.exchangeContainer .left .psComment {
+    height: 100px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.exchangeContainer .left .psComment>img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.exchangeContainer .left .psComment input {
+    width: 560px;
+    height: 48px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #EAEAEA;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(170, 170, 170, 1);
+    padding-left: 16px;
+    margin-right: 13px;
+    margin-left: 16px;
+}
+
+.exchangeContainer .left .psComment input:focus {
+    place-content: center;
+    outline: none;
+    /* 移除默认的焦点轮廓 */
+    color: #333;
+    /* 设置输入文本的颜色 */
+}
+
+.exchangeContainer .left .psComment button {
+    width: 109px;
+    height: 48px;
+    background-color: rgba(139, 90, 43, 1);
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 48px;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.exchangeContainer .left .psComment div {
+    width: 100%;
+    height: 21px;
+    line-height: 21px;
+    margin-top: 19px;
+}
+
+.exchangeContainer .left .psComment div img {
+    width: 11px;
+    height: 11px;
+}
+
+.exchangeContainer .left .psComment div span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #6D8383;
+    line-height: 21px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+.exchangeContainer .left .commentContentContainer {
+    width: 100%;
+    height: 906px;
+    background-color: #ffffff;
+    margin-top: 16px;
+}
+
+.commentContentTitle {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #8B5A2B;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.commentContentContainer .commentContent {
+    padding: 25px 15px;
+    display: flex;
+    border-top: 1px solid #DEDEDE;
+}
+
+.commentContentContainer .commentContent .content {
+    width: 100%;
+    height: 191px;
+    margin-left: 14px;
+}
+
+.commentContentContainer .commentContent .content .name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #966338;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    margin-right: 8px;
+}
+
+.commentContentContainer .commentContent .content .hc {
+    display: inline-block;
+    width: 68px;
+    height: 21px;
+    line-height: 21px;
+    background: #F3EEE9;
+    border-radius: 19px 19px 19px 19px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #966338;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+}
+
+.commentContentContainer .commentContent .content .time {
+    font-weight: 400;
+    font-size: 14px;
+    color: #92A19F;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    float: right;
+}
+
+.commentContentContainer .commentContent .content .title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3E2723;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin: 10px 0;
+}
+
+.commentContentContainer .commentContent .content .textContent {
+    font-weight: 400;
+    font-size: 16px;
+    color: #947272;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.commentContentContainer .commentContent .content .tag {
+    display: inline-block;
+    width: 70px;
+    height: 24px;
+    background: #F5F5DC;
+    border-radius: 3px 3px 3px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555555;
+    line-height: 24px;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    margin: 13px 0;
+    margin-right: 6px;
+}
+
+.commentContentContainer .commentContent .content .lcs img {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.commentContentContainer .commentContent .content .lcs {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6D8383;
+    line-height: 24px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    padding-right: 23px;
+}
+
+.commentContentContainer .otherMore {
+    width: 132px;
+    height: 41px;
+    margin: 0 auto;
+    margin-top: 41px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #8B5A2B;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8E653F;
+    line-height: 41px;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+}
+
+.exchangeContainer .right {
+    flex: 1;
+}
+
+.right .expertList {
+    width: 100%;
+    height: 511px;
+    background-color: #fFF;
+}
+
+.right .expertList .listTitle {
+    height: 58px;
+    /* padding: 22px; */
+    padding-left: 22px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #8E653F;
+    line-height: 58px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.right .expertList .expert {
+    display: flex;
+    align-items: center;
+    width: 345px;
+    height: 74px;
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.right .expertList .expert img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.right .expertList .expert>div {
+    width: 75%;
+}
+
+.right .expertList .expert .name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #966338;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.right .expertList .expert .hospital {
+    font-weight: 500;
+    font-size: 14px;
+    color: #AAAAAA;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.right .expertList .expert span {
+    display: inline-block;
+    float: right;
+    width: 94px;
+    height: 25px;
+    line-height: 25px;
+    background: #F3EEE9;
+    border-radius: 19px 19px 19px 19px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #966338;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+}
+
+.right .expertList .otherAll {
+    margin: 0 auto;
+    margin-top: 47px;
+    width: 84px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8E653F;
+    line-height: 21px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.right .activity {
+    width: 100%;
+    height: 522px;
+    margin-top: 16px;
+    background-color: #fFF;
+}
+
+.right .activity .activeList {
+    height: 58px;
+    /* padding: 22px; */
+    padding-left: 22px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #8E653F;
+    line-height: 58px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.right .activity .activeContent {
+    width: 354px;
+    height: 171px;
+    margin: 0 auto;
+    margin-top: 16px;
+    background-image: url(./img/bg1.png);
+    padding: 8px;
+    position: relative;
+}
+
+.right .activity .activeContent p {
+    position: absolute;
+    bottom: 32px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.right .activity .activeContent span {
+    height: 17px;
+    line-height: 17px;
+    position: absolute;
+    bottom: 9px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.right .activity .activeContent span img {
+    float: left;
+    width: 13px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.right .activity .otherAll {
+    margin: 0 auto;
+    margin-top: 29px;
+    width: 84px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8E653F;
+    line-height: 21px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.plateTitle {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 49px;
+    margin-bottom: 30px;
+    font-family: HYCuSong, HYCuSong;
+    font-weight: normal;
+    font-size: 30px;
+    color: #784A1D;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.plateContainer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 21px;
+}
+
+.plateContainer>div {
+    flex: 1;
+}
+
+.plateContainer .plateContent {
+    height: 336px;
+    background-color: #ffffff;
+}
+
+.plateContainer .plateContent .img {
+    width: 386px;
+    height: 194px;
+    background-image: url(./img/plate1.png);
+    background-size: 100% 100%;
+    padding: 8px;
+    position: relative;
+}
+
+.plateContainer .plateContent .img p {
+    position: absolute;
+    bottom: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.plateContainer .plateContent .img span {
+    height: 17px;
+    line-height: 17px;
+    position: absolute;
+    bottom: 9px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.plateContainer .plateContent p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+    line-height: 24px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin-top: 27px;
+    margin-left: 17px;
+    margin-bottom: 14px;
+}
+
+.plateContainer .plateContent span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #777777;
+    line-height: 18px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin-top: 14px;
+    margin-left: 17px
+}
+
+.plateContainer .plateContent span.link {
+    font-weight: bold;
+    font-size: 14px;
+    color: #8E653F;
+    line-height: 21px;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    float: right;
+    margin: 0;
+    margin-right: 16px;
+}

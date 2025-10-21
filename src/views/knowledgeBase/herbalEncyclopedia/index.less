@@ -1,0 +1,135 @@
+.mainContainer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 32px 22px;
+    height: 100%;
+    background: #FFFFF5;
+    box-shadow: 0px 4px 16px 0px rgba(232, 214, 179, 0.48);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.search {
+    height: 85px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 17px 0px rgba(224, 215, 195, 0.44);
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+
+    input {
+        height: 46px;
+        flex: 7;
+        border-radius: 8px 8px 8px 8px;
+        border: 1px solid #D2D2D2;
+        padding-left: 15px;
+        margin-right: 20px;
+        background: url('./img/search.png') no-repeat;
+        background-position: 10px center;
+        padding-left: 30px;
+    }
+
+    button {
+        flex: 1;
+        margin-right: 25px;
+        height: 46px;
+        border-radius: 8px 8px 8px 8px;
+        background-color: #FFFFFF;
+        border: 1px solid #D2D2D2;
+        font-family: PingFang SC, PingFang SC;
+        font-weight: 400;
+        font-size: 14px;
+        color: #8B5A2B;
+        line-height: 20px;
+        font-style: normal;
+        text-transform: none;
+
+        &.filter {
+            background: #8B5A2B;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.medicalBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    row-gap: 27px;
+    margin-top: 30px;
+
+    .medicalItem {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.09);
+        border-radius: 0px 0px 0px 0px;
+
+        h1 {
+            font-family: PingFang SC, PingFang SC;
+            font-weight: bold;
+            font-size: 16px;
+            color: #8B5A2B;
+            text-align: left;
+            font-style: normal;
+            text-transform: none;
+            margin-left: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-family: PingFang SC, PingFang SC;
+            font-weight: 400;
+            font-size: 15px;
+            color: #555555;
+            line-height: 27px;
+            text-align: left;
+            font-style: normal;
+            text-transform: none;
+            margin: 0 15px;
+            margin-bottom: 5px;
+
+            span {
+                font-family: PingFang SC, PingFang SC;
+                font-weight: 400;
+                font-size: 13px;
+                color: #777777;
+                line-height: 23px;
+                text-align: left;
+                font-style: normal;
+                text-transform: none;
+                margin-right: 15px;
+            }
+
+            img {
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+
+        button {
+            width: 90%;
+            margin: 20px 15px;
+            padding: 3px 0;
+            background: #966338;
+            border-radius: 0px 0px 0px 0px;
+            font-weight: 400;
+            font-size: 15px;
+            color: #FFFFFF;
+            line-height: 26px;
+            font-style: normal;
+            text-transform: none;
+            border: none;
+        }
+    }
+}
+.demo-pagination-block{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    .el-pagination{
+        width: 60%;
+        justify-content: space-between;
+    }
+}
+.el-pager .is-active{
+background-color: #333;
+}

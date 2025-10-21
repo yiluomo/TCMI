@@ -1,0 +1,262 @@
+.mainTitle {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    h1 {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        font-family: Microsoft YaHei, Microsoft YaHei;
+        font-weight: bold;
+        font-size: 34px;
+        color: #1A3D2E;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-family: Microsoft YaHei, Microsoft YaHei;
+        font-weight: 400;
+        font-size: 12px;
+        color: #B4A580;
+        line-height: 24px;
+        font-style: normal;
+        text-transform: none;
+        text-align: center;
+    }
+}
+
+.applyContainer {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .applyItem {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px 0px rgba(232, 214, 179, 0.48);
+        border-radius: 0px 0px 0px 0px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        margin-bottom: 5px;
+        font-family: PingFang SC, PingFang SC;
+        font-weight: bold;
+        font-size: 20px;
+        color: #8B4513;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+        padding: 0 15px;
+    }
+
+    p {
+        margin: 0 15px;
+        font-family: PingFang SC, PingFang SC;
+        font-weight: 400;
+        font-size: 16px;
+        color: #888888;
+        line-height: 24px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    h2 {
+        margin: 5px 0;
+        padding: 0 15px;
+        font-family: PingFang SC, PingFang SC;
+        font-weight: bold;
+        font-size: 16px;
+        color: #555555;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    span {
+        display: inline-block;
+        padding: 3px 8px;
+        margin-left: 15px;
+        background: #F5F5DC;
+        border-radius: 3px 3px 3px 3px;
+        font-family: PingFang SC, PingFang SC;
+        font-weight: 400;
+        font-size: 12px;
+        color: #555555;
+        line-height: 18px;
+        text-align: left;
+        font-style: normal;
+        text-transform: none;
+    }
+
+    button {
+        margin: 20px 15px;
+        width: 90%;
+        height: 44px;
+        font-family: PingFang SC, PingFang SC;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8B4513;
+        line-height: 24px;
+        font-style: normal;
+        text-transform: none;
+        display: block;
+        border-radius: 0px 0px 0px 0px;
+        background-color: #FFFFFF;
+        border: 1px solid #8B4513;
+    }
+}
+
+table {
+    width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse; // 添加此行以确保表格边框合并
+    border: none; // 去除表格边框
+
+    thead {
+        tr {
+            height: 71px;
+            background: #8B4513;
+            box-shadow: 0px 4px 16px 0px rgba(232, 214, 179, 0.48);
+            border-radius: 0px 0px 0px 0px;
+
+            th {
+                font-family: PingFang SC, PingFang SC;
+                font-weight: bold;
+                font-size: 18px;
+                color: #FFFFFF;
+                font-style: normal;
+                text-transform: none;
+            }
+        }
+    }
+
+    tr {
+        height: 62px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 0px 0px;
+
+        td {
+            font-family: PingFang SC, PingFang SC;
+            font-weight: 400;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+            font-style: normal;
+            text-transform: none;
+
+            &.first {
+                color: #8B4513;
+            }
+        }
+    }
+}
+
+.methodBox {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+
+    .method {
+        flex: 1;
+        height: 350px;
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px 0px rgba(235, 232, 210, 0.57);
+        border-radius: 0px 0px 0px 0px;
+
+        &>.text {
+            padding: 20px;
+
+            h2 {
+                font-family: PingFang SC, PingFang SC;
+                font-weight: 400;
+                font-size: 14px;
+                color: #947272;
+                text-align: left;
+                font-style: normal;
+                text-transform: none;
+
+                span {
+                    background: #EDF7ED;
+                    border-radius: 47px 47px 47px 47px;
+                    padding: 5px 15px;
+                    font-family: PingFang SC, PingFang SC;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #5BB35E;
+                    text-align: left;
+                    font-style: normal;
+                    text-transform: none;
+                    margin-right: 15px;
+                }
+            }
+
+            h1 {
+                margin-top: 12px;
+                margin-bottom: 14px;
+                font-family: HYCuSong, HYCuSong;
+                font-weight: normal;
+                font-size: 21px;
+                color: #966338;
+                text-align: left;
+                font-style: normal;
+                text-transform: none;
+            }
+
+            p {
+                font-family: PingFang SC, PingFang SC;
+                font-weight: 400;
+                font-size: 16px;
+                color: #947272;
+                text-align: left;
+                font-style: normal;
+                text-transform: none;
+                margin: 10px 0;
+            }
+
+            h3 {
+                font-family: PingFang SC, PingFang SC;
+                font-weight: 500;
+                font-size: 16px;
+                color: #333333;
+                text-align: left;
+                font-style: normal;
+                text-transform: none;
+            }
+
+            .doctorInfo {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
