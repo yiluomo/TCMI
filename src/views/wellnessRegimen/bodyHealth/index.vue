@@ -1,5 +1,5 @@
 <template>
-  体质养生
+ 
 </template>
 
 <script setup >
