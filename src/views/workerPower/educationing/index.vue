@@ -5,7 +5,7 @@
             <Banner 
             text1="继续教育体系" 
             text2=’传承经典，创新发展。我们提供系统化的继续教育课程，助力中医从业者提升专业水平，紧跟行业发展前沿。‘
-            title=" continuum"/>
+            />
             <div class="message message_1">
                 <div class="title">
                     <img src="./img/cloudLeft.png" alt="">

@@ -182,6 +182,23 @@
 <script setup >
 import Banner from "@/components/stBanner/index.vue";
 import Form from "@/components/form/index.vue";
+
+import { ref, onMounted } from "vue";
+
+const typelist = ref([]);
+onMounted(() => {
+  typelist.value = document.querySelectorAll(".typeBox span");
+  typelist.value.forEach((item) => {
+    item.addEventListener("click", () => handleClick(item));
+  });
+});
+
+const handleClick = (index) => {
+  typelist.value.forEach((item, i) => {
+    item.classList.remove("active");
+  });
+  index.classList.add("active");
+};
 </script>
 
 
